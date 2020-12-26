@@ -1,0 +1,5 @@
+Lorem Picsum, https://picsum.photos/<int:100-300> 
+Foodish, https://foodish-api.herokuapp.com/api/ , image
+RandomCat, https://aws.random.cat/meow , file
+RandomDog, https://random.dog/woof.json , url
+RandomFox, https://randomfox.ca/floof/ , image
