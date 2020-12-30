@@ -27,6 +27,7 @@ processor = ImageGenerator("imagesources.txt")
 @app.route('/<string:image_provider>/<int:num_images>', methods=['GET'])
 def image_getter(image_provider, num_images):
     url_list = []
+    image_provider = image_provider.lower()
     if(image_provider in processor.image_urls):
         num_images = min(MAX_IMAGES, num_images)
         while(len(url_list) < num_images):

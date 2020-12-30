@@ -13,7 +13,7 @@ class ImageGenerator:
           lines = input_file.readlines()
           for line in lines: 
               line_broken = line.split(",")
-              key_value = line_broken[0].strip()
+              key_value = line_broken[0].strip().lower()
               url_template = line_broken[1].strip()
               self.image_urls[key_value] = [url_template]
               if(len(line_broken) > 2): 
